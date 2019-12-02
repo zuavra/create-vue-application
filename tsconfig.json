@@ -1,11 +1,25 @@
-// tsconfig.json
-// assuming your ts sources are in ./src/
 {
+  "include": ["src"],
+  "exclude": ["node_modules"],
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
       "~*": ["./*"]
     },
-  },
-  "include": ["src/**/*"]
+    "typeRoots": ["node_modules/@types"],
+    "target": "es2015",
+    "module": "es2015",
+    "lib": [
+      "es5",
+      "dom",
+      "es2015.core",
+      "es2015.collection",
+      "es2015.iterable",
+      "es2015.promise",
+      "es2016.array.include",
+      "es2017",
+      "es2017.object",
+      "es2018.promise"
+    ]
+  }
 }
