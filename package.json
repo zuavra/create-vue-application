@@ -1,0 +1,19 @@
+{
+  "name": "make-js-project",
+  "version": "1.0.0",
+  "description": "How to make a new JS project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cprpopqual/make-js-project.git"
+  },
+  "author": "Qualitance",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cprpopqual/make-js-project/issues"
+  },
+  "homepage": "https://github.com/cprpopqual/make-js-project#readme"
+}
