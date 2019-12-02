@@ -1,18 +1,21 @@
 <template>
-    <div class="app">
-        App
-    </div>
+	<div class="app">
+		<div class="box">Box 1</div>
+		<div class="box">Box 2</div>
+		<div class="box">Box 3</div>
+	</div>
 </template>
 
-<script>
-  export default {
-    name: 'App',
+<script lang="ts">
+	export default {
+		name: 'App',
 
-    inject: [
-      'http',
-    ],
-  };
+		inject: [
+			'http',
+		],
+
+		mounted() {
+			console.log(this.http);
+		},
+	};
 </script>
-
-<style src="@/css/index.scss"></style>
-<style scoped src="@/css/app.scss"></style>

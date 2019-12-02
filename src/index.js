@@ -5,14 +5,14 @@ import {Http} from './lib/http';
 Vue.config.productionTip = false;
 
 new Vue({
-  el: '#app',
-  components: {
-    App,
-  },
-  provide: {
-    http: new Http(),
-  },
-  render(h) {
-    return h(App);
-  },
+	el: '#app',
+	components: {
+		App,
+	},
+	provide: {
+		http: new Http(),
+	},
+	render(h) {
+		return h(App);
+	},
 });
